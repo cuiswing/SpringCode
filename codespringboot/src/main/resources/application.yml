@@ -1,0 +1,18 @@
+server:
+  port: 9090
+  context-path: /boot
+
+book:
+  name: 《中国国家地理》
+
+author:
+  name: 鲁迅
+
+logging:
+  file: /data/logs/test.log
+  level: info
+
+spring:
+  profiles:
+    active: prod
+

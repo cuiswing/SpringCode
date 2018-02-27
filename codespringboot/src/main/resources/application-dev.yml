@@ -1,0 +1,12 @@
+server:
+  port: 8080
+  context-path: /boot
+
+
+book:
+  name: 《中国风光摄影》
+
+
+author:
+  name: 张爱玲
+

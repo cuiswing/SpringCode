@@ -1,0 +1,11 @@
+server:
+  port: 9999
+  context-path: /boot
+
+
+book:
+  name: 《中国人像摄影》
+
+
+author:
+  name: 徐志摩
