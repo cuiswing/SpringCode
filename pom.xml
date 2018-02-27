@@ -10,6 +10,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>codespringboot</module>
+        <module>codeelasticjob</module>
     </modules>
 
     <parent>
@@ -17,6 +18,28 @@
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>1.5.9.RELEASE</version>
     </parent>
+
+    <properties>
+        <elastic-job-lite.version>2.1.5</elastic-job-lite.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <!--任务调度-->
+            <!-- 引入elastic-job-lite核心模块 -->
+            <dependency>
+                <groupId>com.dangdang</groupId>
+                <artifactId>elastic-job-lite-core</artifactId>
+                <version>${elastic-job-lite.version}</version>
+            </dependency>
+            <!-- 使用springframework自定义命名空间时引入 -->
+            <dependency>
+                <groupId>com.dangdang</groupId>
+                <artifactId>elastic-job-lite-spring</artifactId>
+                <version>${elastic-job-lite.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
     <build>
         <plugins>
