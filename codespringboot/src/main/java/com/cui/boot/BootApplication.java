@@ -30,7 +30,7 @@ public class BootApplication {
 
     @RequestMapping("/")
     public String index() {
-        return new Date().toLocaleString() + "\tHello Spring Boot\t" + bookName + testModel.getName();
+        return new Date().toLocaleString() + "\t Hello Spring Boot \t" + bookName + testModel.getName();
     }
 
 }
