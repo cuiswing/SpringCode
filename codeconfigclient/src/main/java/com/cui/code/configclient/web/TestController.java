@@ -1,6 +1,7 @@
 package com.cui.code.configclient.web;
 
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.core.env.Environment;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -12,6 +13,7 @@ import javax.annotation.Resource;
  * @date 2018-04-17
  */
 @RestController
+@RefreshScope
 public class TestController {
 
     @Value("${name}")
@@ -28,7 +30,7 @@ public class TestController {
         return name;
     }
 
-    @GetMapping("/env")
+    @GetMapping("/name2")
     public String env() {
         return environment.getProperty("name", "hehe") + environment.getProperty("author", "鲁迅");
     }

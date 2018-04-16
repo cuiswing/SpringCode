@@ -9,5 +9,9 @@ spring:
 server:
   port: 8051
 
+#加入actuator监控模块后有些端点需要授权才能访问，这里取消授权
+management:
+  security:
+    enabled: false
 
 
