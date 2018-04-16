@@ -12,6 +12,7 @@
         <module>codespringboot</module>
         <module>codeelasticjob</module>
         <module>codeconfigserver</module>
+        <module>codeconfigclient</module>
     </modules>
 
     <parent>

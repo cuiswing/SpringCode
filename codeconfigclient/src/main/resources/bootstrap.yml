@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: configclient
+  cloud:
+    config:
+      profile: debug
+      label: master
+      uri: http://localhost:8050
+server:
+  port: 8051
+
+
+
